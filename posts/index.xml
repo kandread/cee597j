@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Computational Methods in Environmental Engineering</title>
+    <link>https://kandread.github.io/cee597j/posts/</link>
+    <description>Recent content in Posts on Computational Methods in Environmental Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2020 16:47:40 -0500</lastBuildDate>
+    
+	<atom:link href="https://kandread.github.io/cee597j/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Syllabus</title>
+      <link>https://kandread.github.io/cee597j/posts/syllabus/</link>
+      <pubDate>Wed, 15 Jan 2020 16:47:40 -0500</pubDate>
+      
+      <guid>https://kandread.github.io/cee597j/posts/syllabus/</guid>
+      <description>Course details The class meets on Tuesday and Thursday each week, 8:30-9:45 at Engineering Lab, Rm 305.
+ Instructor: Kostas Andreadis Office: 18C Marston Hall Phone: 413-545-5395 Office Hours: Tuesdays 10:00-12:30, or by arrangement  Course description This course provides an introduction to computational techniques that are applicable to environmental problems. The students are expected to attain hands-on experience with numerical and statistical programming tools and learn how to perform a series of analysis and visualization tasks.</description>
+    </item>
+    
+  </channel>
+</rss>
