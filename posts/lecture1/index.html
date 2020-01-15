@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Lecture #1 - Computational Methods in Environmental Engineering</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Lecture #1" />
+<meta property="og:description" content="An overview of the class..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kandread.github.io/cee597j/posts/lecture1/" />
+<meta property="article:published_time" content="2020-01-15T17:01:45-05:00" />
+<meta property="article:modified_time" content="2020-01-15T17:01:45-05:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Lecture #1"/>
+<meta name="twitter:description" content="An overview of the class..."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://kandread.github.io/cee597j/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://kandread.github.io/cee597j/css/main.css" /><link rel="stylesheet" type="text/css" href="https://kandread.github.io/cee597j/css/dark.css"  />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://kandread.github.io/cee597j/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="https://kandread.github.io/cee597j/">Computational Methods in Environmental Engineering</a></h1>
+	<div class="site-description"><h2>CEE597J Spring 2020 Material</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/kandread/cee597j" title="Github"><i data-feather="github"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/cee597j/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/cee597j/posts">Posts</a>
+			</li>
+			
+			<li>
+				<a href="/cee597j/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Lecture #1</h1>
+			<div class="meta">Posted at &mdash; Jan 15, 2020</div>
+		</div>
+
+		<div class="markdown">
+			<h2 id="course-logistics">Course logistics</h2>
+<ul>
+<li>
+<p>Office hours</p>
+<p><strong>Tue 10:00-12:30</strong>, 18C Marston Hall
+(or by appointment, <a href="mailto:kandread@umass.edu">kandread@umass.edu</a>)</p>
+</li>
+<li>
+<p>No textbook</p>
+</li>
+<li>
+<p>Grading</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homework</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>Final project</td>
+<td>40%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="course-objectives">Course objectives</h2>
+<!-- raw HTML omitted -->
+<h2 id="course-schedule">Course schedule</h2>
+<ul>
+<li>Week 1: Introduction and programming basics</li>
+<li>Week 2: Python basics</li>
+<li>Week 3: Data structures</li>
+<li>Week 4: Numerical Python</li>
+<li>Week 5/6: Plotting and visualization</li>
+<li>Week 6/7: Time series analysis</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Week 8: No class</li>
+<li>Week 9: Statistical modeling</li>
+<li>Week 10: Spatial analysis</li>
+<li>Week 11: Databases</li>
+<li>Week 12: Parallel and cloud computing</li>
+<li>Week 13: Version control</li>
+<li>Week 14: Coding best practices</li>
+</ul>
+<h2 id="machine-architecture">Machine architecture</h2>
+<figure>
+    <img src="/ox-hugo/architecture.png"/> 
+</figure>
+
+<h2 id="computer-programming">Computer programming</h2>
+<ul>
+<li>Sequence of instructions built from set of predefined <!-- raw HTML omitted -->primitives<!-- raw HTML omitted --></li>
+<li>Interpreter executes each instruction in order and completes program</li>
+<li><strong>Programming languages</strong> can abstract methods to create new primitives</li>
+<li>Set of instructions forms the program's source code</li>
+</ul>
+<h2 id="what-can-go-wrong">What can go wrong?</h2>
+<p>Syntactic errors</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">printfd(&#34;hello&#34;)
+</code></pre></div><p>Semantic errors</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">print(&#34;hello&#34; + 3)
+</code></pre></div><p>Algorithmic errors</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">c = 2.998e6
+m = 60
+E = m * c**3
+E
+</code></pre></div><h2 id="choosing-a-programming-language">Choosing a programming language</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Mainstream PL</strong></th>
+<th><strong>Technical Computing</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>static checking</td>
+<td>experimental computation</td>
+</tr>
+<tr>
+<td>classes, single dispatch</td>
+<td>complex operators</td>
+</tr>
+<tr>
+<td>data hiding</td>
+<td>manipulation of data</td>
+</tr>
+<tr>
+<td>parametric polymorphism</td>
+<td>ad hoc polymorphism</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><!-- raw HTML omitted --></p>
+<h2 id="expressiveness-vs-performance">Expressiveness vs Performance</h2>
+<figure>
+    <img src="https://pbs.twimg.com/media/Dv8k-qpWwAAHRtg.jpg"/> 
+</figure>
+
+<h2 id="and-the-winner-is-dot-dot-dot">And the winner is&hellip;</h2>
+<figure>
+    <img src="https://2s7gjr373w3x22jf92z99mgm5w-wpengine.netdna-ssl.com/wp-content/uploads/2016/08/python%5Flogo%5F1.png"/> 
+</figure>
+
+<p>Java</p>
+<p>```java
+public class Main {
+public static void main(String[] args) {
+System.out.println(&ldquo;hello umass&rdquo;);
+}
+}
+```</p>
+<p>Python</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">  print(&#34;hello umass&#34;)
+</code></pre></div><h2 id="libraries">Libraries</h2>
+<ul>
+<li><strong>Numpy</strong></li>
+<li><strong>Scipy</strong></li>
+<li><strong>Pandas</strong></li>
+<li><strong>Xarray</strong></li>
+<li><strong>Scikit-Learn</strong></li>
+<li><strong>Matplotlib</strong></li>
+<li><strong>Statsmodels</strong></li>
+</ul>
+<p>Wealth of Python libraries allow us to be productive with complex tasks</p>
+<p>Let's look at an example!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">import folium
+import vincent
+import pandas as pd
+from climata.usgs import DailyValueIO
+datelist = pd.date_range(end=pd.datetime(2019, 12, 31), periods=365)
+data = DailyValueIO(start_date=datelist[0], end_date=datelist[-1],
+                    station=&#34;01175500&#34;, parameter=&#34;00060&#34;)
+flow = pd.DataFrame({&#39;flow&#39;: [r[1] for r in data[0].data]}, index=datelist)
+m = folium.Map(location=[42.4, -72.3], zoom_start=7, tiles=&#39;Stamen Terrain&#39;)
+vis = vincent.Line(flow, width=550, height=250).axis_titles(x=&#39;Date&#39;, y=&#39;Flow&#39;)
+folium.Marker(
+    location=[42.267778, -72.333056],
+    popup=folium.Popup(max_width=vis.width+75).add_child(
+        folium.Vega(vis, width=&#34;100%&#34;, height=&#34;100%&#34;))
+).add_to(m)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">m
+</code></pre></div><!-- raw HTML omitted -->
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/cee597j/tags/lectures">lectures</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script>
+</body>
+</html>

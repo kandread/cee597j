@@ -5,9 +5,10 @@ theme = "ezhil"
 publishDir = "."
 
 # Enable syntax highlighting.
-pygmentsstyle = "solarized-dark"
+pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+
 
 # Number of posts to show in recent posts list (Optional). Defaults to 10.
 paginate = 10

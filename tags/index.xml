@@ -6,15 +6,24 @@
     <description>Recent content in Tags on Computational Methods in Environmental Engineering</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2020 16:47:40 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jan 2020 17:01:45 -0500</lastBuildDate>
     
 	<atom:link href="https://kandread.github.io/cee597j/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>lectures</title>
+      <link>https://kandread.github.io/cee597j/tags/lectures/</link>
+      <pubDate>Wed, 15 Jan 2020 17:01:45 -0500</pubDate>
+      
+      <guid>https://kandread.github.io/cee597j/tags/lectures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>syllabus</title>
       <link>https://kandread.github.io/cee597j/tags/syllabus/</link>
-      <pubDate>Wed, 15 Jan 2020 16:47:40 -0500</pubDate>
+      <pubDate>Wed, 15 Jan 2020 17:01:44 -0500</pubDate>
       
       <guid>https://kandread.github.io/cee597j/tags/syllabus/</guid>
       <description></description>

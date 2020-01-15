@@ -2,7 +2,7 @@
 title = "Syllabus"
 author = ["Kostas Andreadis"]
 description = "The syllabus for Spring 2020 of the class is given below."
-lastmod = 2020-01-15T16:47:40-05:00
+lastmod = 2020-01-15T17:01:44-05:00
 tags = ["syllabus"]
 draft = false
 +++
